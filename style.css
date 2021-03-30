@@ -1,9 +1,9 @@
-p {
+.pcolor {
     color: green;
 }
-ul{
+.listcolor {
     color: orange;
 }
-body {
-font: 24px;
+.allfont {
+font-size: 24px;
 }
