@@ -4,7 +4,7 @@
 ul,ol{
     background-color: yellow;
 }
-footer header {
+footer, header {
     border: 3px dashed blue;
 }
 h1, h2, h3, h4{
@@ -17,6 +17,5 @@ li.new {
     background-color: red;
 }
 .new.posted-today {
-    text-decoration: underline;
     background-color: pink;
 }
