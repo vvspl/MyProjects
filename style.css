@@ -4,12 +4,12 @@ img[alt="Pollution"]{
 img[src$=".jpg"]{
     margin-left: 50px;
 }
-li[data-description*="even"]{
-    font-size: 24px;
+li[data-description~="even"]{
+    background-color: grey;
 }
 a[href^="https://"]{
     color: green;
 }
 span[lang|="en"]{
-    font-size: 24px;
+    font-size: 28px;
 }
