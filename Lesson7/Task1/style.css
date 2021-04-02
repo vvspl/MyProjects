@@ -12,7 +12,7 @@ a:active, button:active{
 a:hover{
     font-size: 24px;
 }
-button:disabled:hover{
+button:disabled{
     border: 2px dashed grey;
 }
 button:enabled:hover{
