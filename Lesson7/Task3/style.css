@@ -1,0 +1,18 @@
+p.theory::first-letter{
+    font-size: 36px;
+    color: orange;
+    margin-left: 16px;
+}
+p.theory::first-line{
+    font-size: 24px;
+}
+p.theory::selection{
+    color: white;
+    background-color: red;
+}
+a::before{
+    content: ">";
+}
+a::after{
+    content: "<";
+}
