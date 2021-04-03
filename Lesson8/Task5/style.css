@@ -2,5 +2,11 @@ div{
     border: 3px solid black;
     padding: 50px;
     background-color: aqua;
-    margin: 50px;
+    margin: 50px 0px;
+}
+div:first-child{
+    margin-top: 0px;
+}
+div:last-child{
+    margin-bottom: 0px;
 }
