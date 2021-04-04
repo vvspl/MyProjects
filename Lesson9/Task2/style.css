@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 50%;
+    float: left;
+}
+.red{
+    background-color: red;
+    float: left;
+}
+.green{
+    background-color: green;
+    float: right;
+}
+.footer{
+    clear: both;
+}
