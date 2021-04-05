@@ -25,7 +25,7 @@ ul{
     width: 200px;
     background-color: aquamarine;
     position: absolute;
-    top: 50%;
+    top: calc(50% - 100px);
     left: calc(50% - 100px);
 }
 .ear{
