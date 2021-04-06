@@ -18,7 +18,7 @@ align-items: center;
 }
 .navigation_item{
     list-style-type: none;
-    margin-right: 10px;
+    margin-right: 16px;
 }
 aside{
     display: flex;
@@ -37,6 +37,7 @@ margin: 16px auto;
 .news{
     height: 40px;
     list-style-type: none;
+    display: flex;
 }
 footer{
 height: 40px;
