@@ -1,0 +1,6 @@
+div div:nth-child(1){
+    display: none;
+}
+div div:nth-child(2){
+    visibility: hidden;
+}
