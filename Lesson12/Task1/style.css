@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 32px;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+}
+h1{
+    word-spacing: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+p{
+    line-height: 28px;
+}
+span{
+    letter-spacing: 3px;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 80%;
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}
+em{
+    font-style: italic;
+    color: grey;
+}
