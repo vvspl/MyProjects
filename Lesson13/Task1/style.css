@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+  }
+div{
+    width: 300px;
+    height: 500px;
+    background-image: url(nature.jpeg);
+    background-position: center;
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 32px;
+    background-size: cover;
+}
