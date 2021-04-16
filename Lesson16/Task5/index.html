@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forms</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form class="login-form">
+      <div class="form">
+        <input type="text" name="input1" value="HTML" disabled />
+      </div>
+      <div class="form">
+        <input type="checkbox" name="input2" />
+      </div>
+      <div class="form">
+        <input type="checkbox" name="input3" checked readonly />
+      </div>
+      <div class="form">
+        <input type="color" name="input4" value="#ff7f50" />
+      </div>
+      <div class="form">
+        <input type="date" name="input5" value="2021-01-02" />
+      </div>
+      <div class="form">
+        <input type="datetime-local" name="input6" value="2024-10-04T13:02" />
+      </div>
+      <div class="form">
+        <input type="email" name="input7" placeholder="example@domain.com" required />
+      </div>
+      <div class="form">
+        <input type="file" name="input8" />
+      </div>
+      <div class="form">
+        <input type="month" name="input9" value="2020-01" />
+      </div>
+      <div class="form">
+        <input type="number" name="input10" value="17" />
+      </div>
+      <div class="form">
+        <textarea name="input11" placeholder="A long time ago..." rows="5" cols="30"></textarea>
+      </div>
+      <div class="form">
+        <input type="password" name="input12" value="secret" />
+      </div>
+      <div class="form languages">
+        <input type="radio" name="input13" value="html" />HTML
+        <input type="radio" name="input13" value="css" checked />CSS
+        <input type="radio" name="input13" value="javascript" />JavaScript
+      </div>
+      <div class="form">
+        <input type="range" name="input14" value="30" />
+      </div>
+      <div class="form">
+        <select name="input15">
+          <option value="react">React</option>
+          <option value="jquery" selected>jQuery</option>
+          <option value="bootstrap">Bootstrap</option>
+        </select>
+      </div>
+      <div class="form">
+        <input type="search" name="input16" placeholder="Type first letters..." />
+      </div>
+      <div class="form">
+        <input type="time" name="input17" value="14:01" />
+      </div>
+      <div class="form">
+        <input type="url" name="input18" placeholder="https://website.com" required />
+      </div>
+      <div class="form">
+        <input type="week" name="input19" value="2021-W51" />
+      </div>
+      <div class="form">
+        <button type="submit">Save</button>
+      </div>
+    </form>
+  </body>
+</html>
