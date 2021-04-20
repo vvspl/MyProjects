@@ -9,7 +9,7 @@ td{
     padding: 4px;
     text-align: right;
 }
-td, table{
+td, th, table{
     border: 1px solid black;
     border-collapse: collapse;
 }
