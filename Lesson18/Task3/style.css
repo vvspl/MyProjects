@@ -1,22 +1,19 @@
-*{
-    box-sizing: border-box;
+.full_bat {
+  font-size: 16px;
 }
-.full_bat{
-    font-size: 16px;
+.three_quarters {
+  font-size: 32px;
 }
-.three_quarters{
-    font-size: 32px;
+.half {
+  font-size: 64px;
 }
-.half{
-    font-size: 64px;
+.quarter {
+  font-size: 128px;
 }
-.quarter{
-    font-size: 128px;
+.empty {
+  font-size: 256px;
 }
-.empty{
-    font-size: 256px;
-}
-.container{
-    display: flex;
-    justify-content: space-around;
+.container {
+  display: flex;
+  justify-content: space-around;
 }
