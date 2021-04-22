@@ -1,4 +1,4 @@
-.full_bat {
+/* .full_bat {
   font-size: 16px;
 }
 .three_quarters {
@@ -12,8 +12,23 @@
 }
 .empty {
   font-size: 256px;
-}
+} */
 .container {
   display: flex;
   justify-content: space-around;
+}
+div > i:nth-child(1){
+    font-size: 16px;
+}
+div > i:nth-child(2){
+    font-size: 32px;
+}
+div > i:nth-child(3){
+    font-size: 64px;
+}
+div > i:nth-child(4){
+    font-size: 128px;
+}
+div > i:nth-child(5){
+    font-size: 256px;
 }
