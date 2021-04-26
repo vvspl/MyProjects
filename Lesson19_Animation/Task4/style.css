@@ -16,6 +16,7 @@
   line-height: 100px;
   vertical-align: middle;
   position: absolute;
+  left: calc(50vw - 125px);
   animation: menu 2s ease;
   animation-fill-mode: forwards;
 }
