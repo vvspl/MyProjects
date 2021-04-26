@@ -8,7 +8,7 @@
     align-items: center;
 }
 .spinner-text{
-    font-family: monospace, sans-serif;
+    font-family: monospace;
     font-size: 16px;
     text-transform: uppercase;
     animation: blinking 2s;
