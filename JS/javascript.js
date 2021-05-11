@@ -1,33 +1,18 @@
-function ifDiv(n) {
-  if (n % 2 === 0) return 1;
-  if (n % 3 === 0) return 1;
-  if (n % 5 === 0) return 1;
-  if (n % 7 === 0) return 1;
-  return 0;
-}
-function ifDivide(n) {
-  if (n % 2 === 0) {
-    if (ifDiv(n / 2) === 0) return 1;
-    return 0;
+const uniqueCount = (array) => {
+  if (!Array.isArray(array)) return null;
+  const newArray = [];
+  for (let i = 0; i < array.length; i += 1) {
+   // let flag = false;
+    for (let j = i + 1; j < array.length; j += 1) {
+      if (array[i] === array[j]) {
+        array[j] = null;
+       // flag = true;
+      }
+      //if (j === array.length - 1 && flag === true) array[i] = null;
+    }
+    if (array[i] !== null) newArray.push(array[i]);
   }
-  if (n % 3 === 0) {
-    if (ifDiv(n / 3) === 0) return 1;
-    return 0;
-  }
-  if (n % 5 === 0) {
-    if (ifDiv(n / 5) === 0) return 1;
-    return 0;
-  }
-  if (n % 7 === 0) {
-    if (ifDiv(n / 7) === 0) return 1;
-    return 0;
-  }
-  return 1;
-}
+  return newArray.length;
+};
 
-function getPrimes(n) {
-  for (let i = 2; i <= n; i += 1) {
-    if (ifDivide(i) === 1) console.log(i);
-  }
-}
-getPrimes(20);
+uniqueCount([3, 6, 7, 8, 7, 6, 3, 4, 2, 3, 7, 8, 3]);
