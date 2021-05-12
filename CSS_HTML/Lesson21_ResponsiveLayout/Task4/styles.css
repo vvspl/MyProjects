@@ -18,19 +18,11 @@ h1 {
   padding: 0.5em;
   text-align: center;
 }
-.main{
-    display: flex;
-    flex-direction: row;
-    min-height: 100vh;
+.main {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
 }
-
-body{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: space-between;
-}
-
 .navigation,
 .section,
 .news {
@@ -38,7 +30,6 @@ body{
 }
 .navigation {
   width: 20%;
-  
 }
 .section {
   width: 60%;
@@ -48,38 +39,36 @@ body{
   width: 20%;
 }
 
-.section ul{
-    line-height: 1.75em;
+.section ul {
+  line-height: 1.75em;
 }
-.css-units{
-    color: #8b0000;
-    background-color: #e5e5e5;
-    font-size: 1.125em;
-    font-weight: 700;
+.css-units {
+  color: #8b0000;
+  background-color: #e5e5e5;
+  font-size: 1.125em;
+  font-weight: 700;
 }
-.section__header{
-    font-size: 5vw;
-    text-align: center;
+.section__header {
+  font-size: 5vw;
+  text-align: center;
 }
-.nav-list{
-    padding: 0px;
+.nav-list {
+  padding: 0px;
 }
-.nav-list-item{
-    list-style-type: none;
-    background-color: #808080;
-    height: 2em;
-    color: white;
-    margin-bottom: 0.5em;
-    padding: 0px 0.5em;
-    line-height: 2em;
+.nav-list-item {
+  list-style-type: none;
+  background-color: #808080;
+  height: 2em;
+  color: white;
+  margin-bottom: 0.5em;
+  padding: 0px 0.5em;
+  line-height: 2em;
 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.nav-list-link{
-    color: white;
-    text-decoration: none;
-    
-
+.nav-list-link {
+  color: white;
+  text-decoration: none;
 }
