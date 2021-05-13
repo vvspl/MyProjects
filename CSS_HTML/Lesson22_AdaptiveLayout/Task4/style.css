@@ -25,6 +25,10 @@ button {
   width: 20%;
   visibility: hidden;
 }
+.nav-list{
+    margin:0px;
+    padding: 0px;
+}
 .nav-list-item {
   background-color: #808080;
   list-style-type: none;
