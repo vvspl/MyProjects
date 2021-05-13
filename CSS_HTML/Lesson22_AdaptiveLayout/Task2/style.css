@@ -8,26 +8,26 @@ span {
   padding: 8px;
   margin: auto;
 }
-.container__Inner-navigation,
-.container__Inner-product,
-.container__news {
+.navigation,
+.products-list,
+.news {
   min-height: 200px;
   display: flex;
   flex-grow: 1;
 }
 
-.container__Inner-navigation {
+.navigation {
   background-color: #ff7f50;
 }
-.container__Inner-products {
+.products-list {
   background-color: #006400;
 }
-.container__news {
+.news {
   background-color: #0ff;
 }
 
 @media screen and (min-width: 600px) {
-  .container__Inner {
+  .products {
     display: flex;
   }
 }
@@ -35,7 +35,7 @@ span {
     .container {
     display: flex;
     }
-    .container__Inner{
+    .products{
         flex-grow: 2;
     }
 }
