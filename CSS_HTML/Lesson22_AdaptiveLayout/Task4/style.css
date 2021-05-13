@@ -24,6 +24,7 @@ button {
 .navigation {
   width: 20%;
   visibility: hidden;
+  padding: 0.5em;
 }
 .nav-list{
     margin:0px;
