@@ -27,15 +27,15 @@ span {
 }
 
 @media screen and (min-width: 600px) {
-  .container {
+  .containerInner {
     display: flex;
   }
 }
 @media screen and (min-width: 900px) {
-    body {
+    .containerOuter {
     display: flex;
     }
-    .container{
+    .containerInner{
         flex-grow: 2;
     }
 }
