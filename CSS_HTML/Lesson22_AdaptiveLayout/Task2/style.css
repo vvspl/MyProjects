@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+span{
+    font-family: Verdana, sans-serif;
+    background-color: #faebd7;
+    border-radius: 4px;
+    padding: 8px;
+}
+.navigation, .product, .news{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation{
+    background-color: #ff7f50;
+}
+.products{
+    background-color: #006400;
+}
+.news{
+background-color: #0ff;
+}
+@media (min-width: 600px){
+
+}
+@media (min-width: 900px){
+
+}
