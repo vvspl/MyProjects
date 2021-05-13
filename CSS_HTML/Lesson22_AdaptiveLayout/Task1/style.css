@@ -21,6 +21,6 @@
 }
 @media (orientation: portrait) {
   .container {
-    display: flex;
+  flex-direction: column;
   }
 }
