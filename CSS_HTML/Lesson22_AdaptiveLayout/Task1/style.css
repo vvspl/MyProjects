@@ -1,24 +1,24 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    display: flex;
-    justify-content: center;
+body {
+  display: flex;
+  justify-content: center;
 }
-.square{
-    height: 100px;
-    width: 100px;
-    margin: 8px;
-    background-color: #ff7f50;
+.square {
+  height: 100px;
+  width: 100px;
+  margin: 8px;
+  background-color: #ff7f50;
 }
 
 @media (min-width: 600px) {
-    .square{
-        background-color: #8a2be2;
-    }
+  .square {
+    background-color: #8a2be2;
+  }
 }
-@media (orientation: landscape){
-.container{
-    display:flex;
-}
+@media (orientation: landscape) {
+  .container {
+    display: flex;
+  }
 }
