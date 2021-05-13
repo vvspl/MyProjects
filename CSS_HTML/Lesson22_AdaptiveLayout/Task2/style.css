@@ -8,34 +8,34 @@ span {
   padding: 8px;
   margin: auto;
 }
-.navigation,
-.product,
-.news {
+.container__Inner-navigation,
+.container__Inner-product,
+.container__news {
   min-height: 200px;
   display: flex;
   flex-grow: 1;
 }
 
-.navigation {
+.container__Inner-navigation {
   background-color: #ff7f50;
 }
-.products {
+.container__Inner-products {
   background-color: #006400;
 }
-.news {
+.container__news {
   background-color: #0ff;
 }
 
 @media screen and (min-width: 600px) {
-  .containerInner {
+  .container__Inner {
     display: flex;
   }
 }
 @media screen and (min-width: 900px) {
-    .containerOuter {
+    .container {
     display: flex;
     }
-    .containerInner{
+    .container__Inner{
         flex-grow: 2;
     }
 }
