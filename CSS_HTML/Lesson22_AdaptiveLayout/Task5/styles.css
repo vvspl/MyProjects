@@ -20,25 +20,24 @@ h1 {
 }
 .main {
   display: flex;
-  flex-direction: row;
-  /* min-height: 100vh; */
-  flex-grow: 1;  /*khgkgg*/
+  /* flex-direction: row; */
+  flex-grow: 1;  
 }
 .navigation,
 .section,
 .news {
   padding: 0.5em;
 }
-.navigation {
+/* .navigation {
   width: 20%;
-}
+} */
 .section {
-  width: 60%;
+  /* width: 60%; */
   font-size: 1.25em;
 }
-.news {
+/* .news {
   width: 20%;
-}
+} */
 
 .section ul {
   line-height: 1.75em;
@@ -85,12 +84,36 @@ img {
 
 @media (max-width:599px){
   .main{
-    flex-direction: row;
+    flex-direction: column;
   };
 }
 @media (min-width:600px){
-
+ .main {
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
+ .navigation{
+  width: 20%;
 }
-@media (min-width:900px){
+.section{
+  width:80%;
+}
+ .news{
+   min-width: 600px;
+ } 
+}
 
+@media (min-width:900px){
+  .main {
+    flex-direction: row;
+   }
+   .navigation{
+    width: 20%;
+  }
+  .section{
+    width:60%;
+  }
+  .news {
+    width: 20%;
+  }
 }
