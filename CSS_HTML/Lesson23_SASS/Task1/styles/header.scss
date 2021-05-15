@@ -1,0 +1,27 @@
+.header{
+    height: $unit * 7;
+    background-color: $color-grey;
+    display: flex;
+    align-items: center;
+    &__navigation{
+        .nav-list{
+        list-style-type: none;
+        margin:0px;
+        padding: 0px;
+        display: flex;
+        &__item {
+            color: $text-color-secondary;
+            border-radius: $border-radius;
+            padding: $unit;
+            margin-left: $unit;
+            font-weight: 700;
+            cursor: pointer;
+            background-color: $color-secondary;
+        }
+        &__item:hover {
+            background-color: $color-primary;
+            opacity: 0.7;
+        }
+        }
+    }
+}
