@@ -13,13 +13,10 @@ body {
 .square {
   height: 100px;
   width: 100px;
-  // margin: 8px;
-  @include vertical {
-    margin:12px;
-  }
-  @include horizontal {
-    margin: 8px;
-  }
+  margin: 8px;
+  // @include vertical {
+  //   margin:12px;
+  // }
 
   @include for-extra-small {
     background-color: #ff7f50;

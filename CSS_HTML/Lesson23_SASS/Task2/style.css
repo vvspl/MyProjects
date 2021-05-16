@@ -12,16 +12,7 @@ body {
 .square {
   height: 100px;
   width: 100px;
-}
-@media (orientation: portrait) {
-  .square {
-    margin: 12px;
-  }
-}
-@media (orientation: landscape) {
-  .square {
-    margin: 8px;
-  }
+  margin: 8px;
 }
 @media (max-width: 599px) {
   .square {
