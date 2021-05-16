@@ -14,7 +14,6 @@ body {
   height: 100px;
   width: 100px;
   margin: 8px;
-  // background-color: #ff7f50;
 
   @include for-extra-small {
     background-color: #ff7f50;
@@ -35,6 +34,7 @@ body {
     display: flex;
   }
   @include vertical {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
