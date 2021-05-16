@@ -16,13 +16,6 @@ body {
   width: 100px;
   margin: 8px;
 
-  // @include vertical {
-  //   margin: 0 0 12px 0;
-  // }
-  // @include horizontal {
-  //   margin: 8px;
-  // }
-
   @include for-extra-small {
     background-color: #ff7f50;
   }
@@ -42,10 +35,8 @@ body {
     display: flex;
   }
   @include vertical {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
 
-// .square:first-child {
-//   margin-top: 8px;
-// }
