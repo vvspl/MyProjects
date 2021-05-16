@@ -1,0 +1,29 @@
+@import 'layouts.scss';
+
+*{
+    box-sizing: border-box;
+}
+
+@media (min-width: $medium) {
+     .container__products {
+    display:flex;
+  }
+  .navigation{
+      flex:1;
+  }
+  .products-list{
+      flex: 1;
+  }
+}
+@media (min-width: $large) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .container__products{
+      flex: 2;
+  }
+  .news{
+      flex:1;
+  }
+}

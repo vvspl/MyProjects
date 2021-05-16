@@ -1,0 +1,45 @@
+$medium: 600px;
+$large: 900px;
+
+.container {
+    &__products {
+    //   @include mediumResolution{
+    //     flex-direction: row;
+    //   }
+      .navigation {
+          display: flex;
+        min-height: 200px;
+        background-color: #ff7f50;
+      }
+      .products-list {
+          display: flex;
+        min-height: 200px;
+        background-color: #006400;
+      }
+    }
+    .news {
+        display: flex;
+      min-height: 200px;
+      background-color: #0ff;
+    }
+  }
+  
+  span {
+    font-family: Verdana;
+    margin: auto;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #faebd7;
+    text-transform: lowercase;
+  }
+
+  @mixin mediumResolution {
+    @media (min-width: $medium) {
+    @content;
+    }
+}
+@mixin largeResolution {
+    @media (min-width: $large) {
+    @content;
+    }
+}
