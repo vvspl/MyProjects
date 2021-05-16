@@ -14,12 +14,10 @@ body {
   height: 100px;
   width: 100px;
   margin: 8px;
-  // @include horizontal {
-  //   margin: 8px;
-  // }
-  // @include vertical {
-  //   margin: 12px;
-  // }
+
+  @include vertical {
+    margin: 0 0 8px 0;
+  }
 
   @include for-extra-small {
     background-color: #ff7f50;
@@ -42,4 +40,8 @@ body {
   @include vertical {
     display: block;
   }
+}
+
+.square:first-child {
+  margin-top: 8px;
 }
