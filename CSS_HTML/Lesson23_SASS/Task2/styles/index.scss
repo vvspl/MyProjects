@@ -16,7 +16,7 @@ body {
   margin: 8px;
 
   @include vertical {
-    margin: 0 0 8px 0;
+    margin: 0 0 9px 0;
   }
 
   @include for-extra-small {
@@ -42,6 +42,6 @@ body {
   }
 }
 
-.square:first-child {
-  margin-top: 8px;
-}
+// .square:first-child {
+//   margin-top: 8px;
+// }
