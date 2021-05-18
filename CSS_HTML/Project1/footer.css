@@ -100,27 +100,7 @@
     margin-left: 20px;
   }
 
-  .learn-more__button{
-    margin-left: 10px;
-    background-color: #fff;
-    color: #3040c4; 
-    height: 48px;
-    width: 160px;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 2px;
-    border: none;
-  }
-  .getstarted__button{
-    height: 48px;
-    width: 160px;
-    font-size: 18px;
-    font-weight: 700;
-    background-color: #3040c4;
-    color: #fff;
-    border-radius: 2px;
-    border: none;
-  }
+
 
   @media (min-width: 400px){
     .social-links {
