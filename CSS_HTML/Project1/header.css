@@ -62,8 +62,8 @@ svg {
 .logo {
   display: flex;
 }
-.logo_image {
-  margin-right: 15px;
+.logo__image {
+  margin: 6px 13px 7px 15px ;
 }
 .logo__name {
   font-size: 20px;
@@ -125,9 +125,6 @@ svg {
     line-height: 25px;
     color: #2b292d;
     opacity: 0.6;
-  }
-  .logo_image {
-    margin-right: 15px;
   }
   svg {
     width: 66px;
