@@ -7,8 +7,8 @@
 }
 .headline__banner {
   width: 100%;
-    margin-bottom: 33px;
-  }
+  margin-bottom: 33px;
+}
 .headline__title {
   font-weight: 700;
   font-size: 50px;
@@ -25,9 +25,9 @@
 .headline__actions {
   margin-top: 30px;
 }
-.learn-more__button{
+.learn-more__button {
   background-color: #fff;
-  color: #3040c4; 
+  color: #3040c4;
   height: 48px;
   width: 100%;
   font-size: 18px;
@@ -36,7 +36,7 @@
   border: none;
   margin-top: 10px;
 }
-.getstarted__button{
+.getstarted__button {
   height: 48px;
   width: 100%;
   font-size: 18px;
@@ -55,46 +55,47 @@
     margin-top: 84px;
     display: flex;
     padding-bottom: 77px;
+    &__banner {
+      position: relative;
+      top: 0;
+      right: -105px;
+      width: 796px;
+      height: 448px;
+      margin-left: auto;
+    }
+    &__content {
+      position: absolute;
+      z-index: 1;
+    }
+    &__title {
+      width: 754px;
+      height: 165px;
+      font-size: 80px;
+      line-height: 78px;
+      letter-spacing: -0.5px;
+      z-index: 1;
+      margin: 0;
+    }
+    &__description {
+      margin-top: 34px;
+      width: 456px;
+      height: 102px;
+      font-size: 24px;
+      line-height: 34px;
+      z-index: 1;
+    }
+    &__actions {
+      margin-top: 58px;
+      display: flex;
+    }
   }
-  .headline__banner {
-    position: relative;
-    top: 0;
-    right: -105px;
-    width: 796px;
-    height: 448px;
-    margin-left: auto;
-  }
-  .headline__content {
-    position: absolute;
-    z-index: 1;
-  }
-  .headline__title {
-    width: 754px;
-    height: 165px;
-    font-size: 80px;
-    line-height: 78px;
-    letter-spacing: -0.5px;
-    z-index: 1;
-    margin: 0;
-  }
-  .headline__description {
-    margin-top: 34px;
-    width: 456px;
-    height: 102px;
-    font-size: 24px;
-    line-height: 34px;
-    z-index: 1;
-  }
-  .headline__actions {
-    margin-top: 58px;
-    display: flex;
-  }
-  .learn-more__button{
+
+  .learn-more__button {
     margin-top: 0px;
     margin-left: 10px;
     width: 160px;
   }
-  .getstarted__button{
+  .getstarted__button {
     width: 160px;
   }
 }
