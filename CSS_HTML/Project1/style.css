@@ -65,16 +65,11 @@
   font-weight: 700;
 }
 
-svg {
-  width: 53px;
-  height: 53px;
-}
-
 .logo {
   display: flex;
 }
 .logo__image {
-  margin: 6px 13px 7px 15px;
+  margin: 6px 10px 7px 14px;
 }
 .logo__name {
   font-size: 20px;
@@ -102,7 +97,7 @@ svg {
   .navigation {
     display: block;
     margin-left: auto;
-    margin-top: 7px;
+    margin-top: 16px;
     margin-right: 75px;
   }
 
@@ -125,6 +120,7 @@ svg {
   .action__button {
     display: block;
     width: 160px;
+    margin: 6px 0 0 0;
   }
 
   .logo__description {
@@ -505,7 +501,7 @@ svg {
 }
 .audience__header {
   margin-top: 0;
-  padding-top: 50px;
+  padding-top: 48px;
   font-size: 22px;
   line-height: 34px;
   font-weight: 700;
@@ -518,7 +514,7 @@ svg {
   }
 }
 .audience__name {
-  margin-top: 17px;
+  margin-top: 15px;
   font-size: 40px;
   line-height: 40px;
   font-weight: 700;
@@ -569,15 +565,14 @@ svg {
     width: 160px;
   }
 }
-
-.user-cards {
+.audience__user-cards {
   display: flex;
   flex-wrap: wrap;
   margin-top: 25px;
 }
 @media (min-width: 400px) {
-  .user-cards {
-    margin: 110px 10%;
+  .audience__user-cards {
+    margin: 100px 10%;
   }
 }
 

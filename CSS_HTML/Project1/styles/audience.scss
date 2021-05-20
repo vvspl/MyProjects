@@ -3,7 +3,7 @@
 
   &__header {
     margin-top: 0;
-    padding-top: 50px;
+    padding-top: 48px;
     font-size: 22px;
     line-height: 34px;
     font-weight: 700;
@@ -15,7 +15,7 @@
   }
 
   &__name {
-    margin-top: 17px;
+    margin-top: 15px;
     font-size: 40px;
     line-height: 40px;
     font-weight: 700;
@@ -24,8 +24,8 @@
     @include for-large-up {
       margin: 24px auto 0 auto;
       font-size: 56px;
-    line-height: 56px;
-    width: 555px;
+      line-height: 56px;
+      width: 555px;
     }
   }
   &__text {
@@ -42,7 +42,7 @@
   &__button_gs {
     display: block;
     @include for-large-up {
-      display:inline-block;
+      display: inline-block;
       margin-left: 38%;
       width: 160px;
     }
@@ -53,19 +53,18 @@
     color: $bright-blue-color;
     margin-top: 12px;
     @include for-large-up {
-      display:inline-block;
+      display: inline-block;
       margin: 0 0 0 5px;
       width: 160px;
     }
   }
-}
-
-.user-cards{
-  display: flex;
-  flex-wrap: wrap;
-  margin-top:25px;
-  @include for-large-up {
-    margin: 110px 10%;
+  &__user-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    @include for-large-up {
+      margin: 100px 10%;
+    }
   }
 }
 
@@ -77,20 +76,20 @@
   width: 290px;
   height: 300px;
   border-radius: 8px;
-  margin:15px auto 0 auto;
+  margin: 15px auto 0 auto;
   background-color: $white-color;
   box-shadow: 0px 1px 0px 0px #ffffff1a inset;
   @include for-large-up {
     width: 262px;
   }
-   &:last-child{
-      margin-bottom: 50px;
-    }
-  
+  &:last-child {
+    margin-bottom: 50px;
+  }
+
   &__image {
     margin: 22px auto;
   }
-  &__label{
+  &__label {
     font-size: 22px;
     line-height: 28px;
     font-weight: 700;
@@ -101,5 +100,3 @@
     background-color: $cyan-color;
   }
 }
-
-

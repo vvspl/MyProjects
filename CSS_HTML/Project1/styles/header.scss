@@ -51,15 +51,10 @@
   font-weight: 700;
 }
 
-svg {
-  width: 53px;
-  height: 53px;
-}
-
 .logo {
   display: flex;
   &__image {
-    margin: 6px 13px 7px 15px;
+    margin: 6px 10px 7px 14px;
   }
   &__name {
     font-size: 20px;
@@ -88,7 +83,7 @@ svg {
   .navigation {
     display: block;
     margin-left: auto;
-    margin-top: 7px;
+    margin-top: 16px;
     margin-right: 75px;
   }
   .top-section {
@@ -109,6 +104,7 @@ svg {
   .action__button {
     display: block;
     width: 160px;
+    margin: 6px 0 0 0;
   }
   .logo__description {
     display: block;
