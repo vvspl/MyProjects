@@ -327,43 +327,37 @@ svg {
 .headline {
   width: 100%;
 }
-
-.headline__content {
-  margin: 35px 15px 33px 15px;
-}
-
-.headline__banner {
-  width: 100%;
-  margin-bottom: 33px;
-}
-
 .headline__title {
   font-weight: 700;
   font-size: 50px;
   line-height: 50px;
   letter-spacing: -0.3125px;
+  margin-bottom: 24px;
 }
-
 .headline__description {
   margin-top: 24px;
   margin-bottom: 0;
   font-size: 24px;
   line-height: 34px;
 }
-
+.headline__content {
+  margin: 35px 15px 33px 15px;
+}
+.headline__banner {
+  width: 100%;
+  margin-bottom: 33px;
+}
 .headline__actions {
   margin-top: 30px;
 }
-
-.learn-more__button {
+.headline__getstartedBtn {
+  width: 100%;
+}
+.headline__learnMoreBtn {
   background-color: #fff;
   color: #3040c4;
   width: 100%;
   margin-top: 10px;
-}
-
-.getstarted__button {
-  width: 100%;
 }
 
 @media (min-width: 400px) {
@@ -384,6 +378,7 @@ svg {
     margin-left: auto;
   }
   .headline__content {
+    margin: 0;
     position: absolute;
     z-index: 1;
   }
@@ -408,14 +403,12 @@ svg {
     margin-top: 58px;
     display: flex;
   }
-
-  .learn-more__button {
+  .headline__learnMoreBtn {
     margin-top: 0px;
     margin-left: 10px;
     width: 160px;
   }
-
-  .getstarted__button {
+  .headline__getstartedBtn {
     width: 160px;
     margin: 0;
   }
