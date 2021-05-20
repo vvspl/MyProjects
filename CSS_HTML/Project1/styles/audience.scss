@@ -1,0 +1,118 @@
+.audience {
+  background-color: #00a1c612;
+
+  &__header {
+    margin-top: 0;
+    padding-top: 50px;
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 700;
+    color: #2b292d;
+    text-align: center;
+    @include for-large-up {
+      padding-top: 108px;
+    }
+  }
+
+  &__name {
+    margin-top: 17px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #2b292d;
+    text-align: center;
+    @include for-large-up {
+      margin-top: 24px;
+      font-size: 56px;
+    line-height: 56px;
+    }
+  }
+  &__text {
+    margin-top: 18px;
+    font-size: 24px;
+    line-height: 34px;
+    color: #2b292d;
+    text-align: center;
+    @include for-large-up {
+      width: 555px;
+      margin: 30px auto 30px auto;
+    }
+  }
+  &__button_gs {
+    display: block;
+    height: 48px;
+    width: 290px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #3040c4;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    margin: 0 auto;
+    padding: 0;
+    @include for-large-up {
+      display:inline-block;
+      margin-left: 30%;
+    }
+  }
+  &__button_lm {
+    display: block;
+    background-color: #fff;
+    color: #3040c4;
+    height: 48px;
+    width: 290px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 2px;
+    border: none;
+    margin: 0 auto;
+    margin-top: 12px;
+    padding: 0;
+    @include for-large-up {
+      display:inline-block;
+      margin: 0 0 0 5px;
+    }
+  }
+}
+
+.user-cards{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:25px;
+  @include for-large-up {
+    margin: 110px 10%;
+  }
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 290px;
+  height: 300px;
+  border-radius: 8px;
+  margin:15px auto 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 0px 0px #ffffff1a inset;
+  @include for-large-up {
+    width: 262px;
+  }
+   &:last-child{
+      margin-bottom: 50px;
+    }
+  
+  &__image {
+    margin: 22px auto;
+  }
+  &__label{
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__entertainment {
+    box-shadow: 0px 13px 18px 0px #00000026;
+    background-color: #3141C5;
+  }
+}

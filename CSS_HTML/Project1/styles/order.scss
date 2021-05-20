@@ -18,9 +18,11 @@
   }
   &__illustration {
     max-width: 200px;
+    margin-left: 15%;
     @include for-large-up {
       max-width: 269px;
       margin-right: 121px;
+      margin-left: 0;
     }
   }
   &__title {
@@ -29,6 +31,7 @@
     line-height: 40px;
     letter-spacing: -0.357143px;
     margin-top: 40px;
+    text-align: center;
   }
   &__text {
     font-size: 24px;
