@@ -69,7 +69,7 @@
   display: flex;
 }
 .logo__image {
-  margin: 6px 10px 7px 14px;
+  margin: 6px 7px 7px 12px;
 }
 .logo__name {
   font-size: 20px;
@@ -97,7 +97,7 @@
   .navigation {
     display: block;
     margin-left: auto;
-    margin-top: 14px;
+    margin-top: 17px;
     margin-right: 75px;
   }
 
@@ -353,7 +353,7 @@
   background-color: #fff;
   color: #3040c4;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 @media (min-width: 400px) {
@@ -501,7 +501,7 @@
 }
 .audience__header {
   margin-top: 0;
-  padding-top: 48px;
+  padding-top: 49px;
   font-size: 22px;
   line-height: 34px;
   font-weight: 700;
@@ -514,7 +514,7 @@
   }
 }
 .audience__name {
-  margin-top: 15px;
+  margin-top: 14px;
   font-size: 40px;
   line-height: 40px;
   font-weight: 700;
@@ -530,7 +530,7 @@
   }
 }
 .audience__text {
-  margin-top: 18px;
+  margin: 13px;
   font-size: 24px;
   line-height: 34px;
   color: #2b292d;
@@ -539,7 +539,7 @@
 @media (min-width: 400px) {
   .audience__text {
     width: 555px;
-    margin: 30px auto 34px auto;
+    margin: 30px auto 30px auto;
   }
 }
 .audience__button_gs {
