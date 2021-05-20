@@ -97,7 +97,7 @@
   .navigation {
     display: block;
     margin-left: auto;
-    margin-top: 16px;
+    margin-top: 14px;
     margin-right: 75px;
   }
 
@@ -572,7 +572,7 @@
 }
 @media (min-width: 400px) {
   .audience__user-cards {
-    margin: 100px 10%;
+    margin: 96px 10%;
   }
 }
 
