@@ -13,13 +13,13 @@
     line-height: 25px;
     font-size: 20px;
     font-weight: 700;
-    color: #2b292d;
+    color: $color-dark;
   }
   &__description {
     margin: 0 auto 31px;
     line-height: 25px;
     font-size: 18px;
-    color: #2b292d;
+    color: $color-dark;
     opacity: 0.6;
   }
 }
@@ -47,14 +47,14 @@
     font-weight: 700;
     margin-block-start: 30px;
     margin-inline-start: 15px;
-    color: #2b292d;
+    color: $color-dark;
   }
   &__list {
     margin-block-start: 18px;
     list-style-type: none;
     line-height: 30px;
     font-size: 18px;
-    color: #2b292d;
+    color: $color-dark;
     opacity: 0.6;
   }
 }
@@ -63,7 +63,7 @@
   margin: 30px 15px;
   &__items {
     text-decoration: none;
-    color: rgba(43, 41, 45, 0.6);
+    color: $color-dark;
     font-size: 14px;
     line-height: 22px;
     padding-right: 12px;
@@ -88,11 +88,11 @@
       font-size: 18px;
       width: 360px;
       margin-top: 26px;
-      color: #2b292d;
+      color: $color-dark;
       opacity: 0.6;
     }
     &__line {
-      border-top: 1px solid #2b292d;
+      border-top: 1px solid $color-dark;
       width: 100%;
       opacity: 0.1;
       margin: 0;
@@ -145,7 +145,7 @@
       font-weight: 700;
       font-size: 22px;
       line-height: 28px;
-      color: #2b292d;
+      color: $color-dark;
       margin: 0;
     }
     &__list {

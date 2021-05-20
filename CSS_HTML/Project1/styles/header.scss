@@ -2,7 +2,7 @@
   display: flex;
   height: 64px;
   width: 100%;
-  background-color: #fff;
+  background-color: $white-color;
   &__menu-button {
     width: 58px;
     border: none;
@@ -30,7 +30,7 @@
 .navigation {
   display: none;
   &__item {
-    color: #2b292d;
+    color: $color-dark;
     font-size: 18px;
     line-height: 25px;
     text-decoration: none;
@@ -108,24 +108,13 @@ svg {
 
   .action__button {
     display: block;
-    height: 48px;
     width: 160px;
-    font-size: 18px;
-    font-weight: 700;
-    background-color: #3040c4;
-    color: #fff;
-    border-radius: 2px;
-    border: none;
   }
   .logo__description {
     display: block;
     font-size: 18px;
     line-height: 25px;
-    color: #2b292d;
+    color: $color-dark;
     opacity: 0.6;
-  }
-  svg {
-    width: 66px;
-    height: 66px;
   }
 }

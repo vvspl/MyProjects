@@ -1,3 +1,16 @@
+.button {
+  height: 48px;
+  width: 290px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #3040c4;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .header {
   display: flex;
   height: 64px;
@@ -111,14 +124,7 @@ svg {
 
   .action__button {
     display: block;
-    height: 48px;
     width: 160px;
-    font-size: 18px;
-    font-weight: 700;
-    background-color: #3040c4;
-    color: #fff;
-    border-radius: 2px;
-    border: none;
   }
 
   .logo__description {
@@ -127,11 +133,6 @@ svg {
     line-height: 25px;
     color: #2b292d;
     opacity: 0.6;
-  }
-
-  svg {
-    width: 66px;
-    height: 66px;
   }
 }
 .footer-logo {
@@ -198,7 +199,7 @@ svg {
 }
 .terms__items {
   text-decoration: none;
-  color: rgba(43, 41, 45, 0.6);
+  color: #2b292d;
   font-size: 14px;
   line-height: 22px;
   padding-right: 12px;
@@ -357,24 +358,12 @@ svg {
 .learn-more__button {
   background-color: #fff;
   color: #3040c4;
-  height: 48px;
   width: 100%;
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 2px;
-  border: none;
   margin-top: 10px;
 }
 
 .getstarted__button {
-  height: 48px;
   width: 100%;
-  font-size: 18px;
-  font-weight: 700;
-  background-color: #3040c4;
-  color: #fff;
-  border-radius: 2px;
-  border: none;
 }
 
 @media (min-width: 400px) {
@@ -428,6 +417,7 @@ svg {
 
   .getstarted__button {
     width: 160px;
+    margin: 0;
   }
 }
 .order {
@@ -478,7 +468,7 @@ svg {
 }
 .order__email {
   margin-top: 40px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #2b292d33;
   border-radius: 2px;
   height: 48px;
@@ -497,14 +487,6 @@ svg {
   color: #2b292d;
 }
 .order__button {
-  height: 48px;
-  width: 160px;
-  font-size: 18px;
-  font-weight: 700;
-  background-color: #3040c4;
-  color: #fff;
-  border-radius: 2px;
-  border: none;
   margin-top: 12px;
   width: 100%;
 }
@@ -552,9 +534,10 @@ svg {
 }
 @media (min-width: 400px) {
   .audience__name {
-    margin-top: 24px;
+    margin: 24px auto 0 auto;
     font-size: 56px;
     line-height: 56px;
+    width: 555px;
   }
 }
 .audience__text {
@@ -567,46 +550,30 @@ svg {
 @media (min-width: 400px) {
   .audience__text {
     width: 555px;
-    margin: 30px auto 30px auto;
+    margin: 30px auto 34px auto;
   }
 }
 .audience__button_gs {
   display: block;
-  height: 48px;
-  width: 290px;
-  font-size: 18px;
-  font-weight: 700;
-  background-color: #3040c4;
-  color: #fff;
-  border-radius: 2px;
-  border: none;
-  margin: 0 auto;
-  padding: 0;
 }
 @media (min-width: 400px) {
   .audience__button_gs {
     display: inline-block;
-    margin-left: 30%;
+    margin-left: 38%;
+    width: 160px;
   }
 }
 .audience__button_lm {
   display: block;
   background-color: #fff;
   color: #3040c4;
-  height: 48px;
-  width: 290px;
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 2px;
-  border: none;
-  margin: 0 auto;
   margin-top: 12px;
-  padding: 0;
 }
 @media (min-width: 400px) {
   .audience__button_lm {
     display: inline-block;
     margin: 0 0 0 5px;
+    width: 160px;
   }
 }
 
@@ -630,7 +597,7 @@ svg {
   height: 300px;
   border-radius: 8px;
   margin: 15px auto 0 auto;
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: 0px 1px 0px 0px #ffffff1a inset;
 }
 @media (min-width: 400px) {

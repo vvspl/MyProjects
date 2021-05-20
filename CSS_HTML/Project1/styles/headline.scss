@@ -26,25 +26,13 @@
   margin-top: 30px;
 }
 .learn-more__button {
-  background-color: #fff;
-  color: #3040c4;
-  height: 48px;
+  background-color: $white-color;
+  color: $bright-blue-color;
   width: 100%;
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 2px;
-  border: none;
   margin-top: 10px;
 }
 .getstarted__button {
-  height: 48px;
   width: 100%;
-  font-size: 18px;
-  font-weight: 700;
-  background-color: #3040c4;
-  color: #fff;
-  border-radius: 2px;
-  border: none;
 }
 
 @media (min-width: 400px) {
@@ -97,5 +85,6 @@
   }
   .getstarted__button {
     width: 160px;
+    margin: 0;
   }
 }
