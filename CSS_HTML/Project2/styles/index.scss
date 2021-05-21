@@ -1,0 +1,108 @@
+@import 'variables';
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-color: $bodyColor;
+  display:flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+.price-card {
+  height: 770px;
+  width: 380px;
+  background-color: $cardColor;
+  margin: 132px 18px 132px auto;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.0875);
+  &:nth-child(3){
+    margin-right:auto;
+  }
+  &__title {
+    &_major {
+      font-size: 35px;
+      line-height: 43px;
+      font-weight: 700;
+      color: $whiteColor;
+      text-align: center;
+      margin: 0;
+      padding-top: 33px;
+    }
+    &_minor {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 300;
+      color: $whiteColor;
+      text-align: center;
+      margin: 0 auto 33px auto;
+    }
+  }
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105px;
+    width: 100%;
+    background-color: $greenColor;
+    &_text {
+      font-size: 55px;
+      font-weight: 700;
+      color: $whiteColor;
+    }
+    &_blueMod{
+      background-color: $blueColor;
+    }
+    &_orangeMod{
+      background-color: $orangeColor;
+    }
+  }
+  &__description {
+    font-size: 15px;
+    font-weight: 300;
+    color: $whiteColor;
+    text-align: center;
+    margin: 40px auto;
+  }
+  &__option-list {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    &:nth-child(even) {
+      background-color: $selectionColor;
+    }
+    &_img{
+      margin: 0 22px;
+    }
+    &_text {
+      font-size: 15px;
+      font-weight: 300;
+      color: $whiteColor;
+    }
+  }
+  &__order-btn {
+    height: 40px;
+    width: 155px;
+    border-radius: 20px;
+    background-color: $greenColor;
+    font-size: 17px;
+    font-weight: 400;
+    color: $whiteColor;
+    text-transform: uppercase;
+    border: none;
+    margin: 40px 112px;
+    padding: 0;
+    &_blueMod{
+      background-color: $blueColor;
+    }
+    &_orangeMod{
+      background-color: $orangeColor;
+    }
+  }
+  &:nth-child(2),&:nth-child(3){
+    margin-left: 18px;
+  }
+}
