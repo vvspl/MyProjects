@@ -6,3 +6,4 @@ export const getMinSquaredNumber = arr => {
 const arr = [-777, 3, -2, -6, 45, -20];
 getMinSquaredNumber(arr);
 
+ 
