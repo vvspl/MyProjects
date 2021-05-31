@@ -12,7 +12,14 @@
             "url": "http://localhost:5050",
             "webRoot": "${workspaceFolder}"
         },
-        
+        {
+            "name": "Launch via npm",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}\\JS\\index.js",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run-script", "debug"]
+          },
         {
             "type": "node",
             "request": "launch",
@@ -20,7 +27,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\JS\\javascript.js"
+            "program": "${workspaceFolder}\\JS\\index.js"
         }
     ]
 }
