@@ -12,11 +12,11 @@ it('should check reverse operation', () => {
 
 it('should check if to put string value', () => {
   const result = reverseArray('Some string');
-  expect(result).toEqual(undefined);
+  expect(result).toEqual(null);
 });
 
 it('should get the amount after withdraw', () => {
-  const result = withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'User', 10);
+  const result = withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'John', 50);
   expect(result).toEqual(37);
 });
 
