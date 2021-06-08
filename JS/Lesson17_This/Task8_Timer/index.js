@@ -4,6 +4,7 @@ const timer = {
   starttimer(){
     setInterval(() => {
       
+    // eslint-disable-next-line no-undef
     }, interval);
   },
   getTime(){},

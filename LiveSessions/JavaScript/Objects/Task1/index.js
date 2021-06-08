@@ -60,3 +60,14 @@ console.log(addPropertyV3(obj_1, 'age', 37));
 const obj4 = { name: 'Test', surname: 'User', adress: 'Kiev' };
 console.log(addPropertyV3(obj4, 'address', 'Lviv'));
 console.log(obj4);
+
+// V3
+function addPropertyV4(obj, key, value) {
+  const newObj = {...obj, [key]:value};
+  return newObj;
+}
+
+// test data
+const obj5 = { name: '!!!', surname: 'User', adress: 'Kiev' };
+console.log(addPropertyV3(obj5, 'address', 'Lviv'));
+console.log(obj5);

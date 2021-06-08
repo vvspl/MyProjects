@@ -46,28 +46,28 @@ const transactions = [5, 8, 10, -4, 33, 220, 555, 41];
 
 // const transactionSum = transactions.reduce(reduceCallback, 0);
 
-// function reduceCallback(acc, el, index, array) {
-//   console.log('Step #' + index);
-//   console.log('el ' + el);
-//   console.log('acc ' + acc);
+function reduceCallback(acc, el, index, array) {
+  console.log('Step #' + index);
+  console.log('el ' + el);
+  console.log('acc ' + acc);
 
-//   if (el > 100) {
-//     acc.push(el);
-//   }
-//   return acc;
+  if (el > 100) {
+    acc.push(el);
+  }
+  return acc;
+}
+
+const bigTransactions = transactions.reduce(reduceCallback, []);
+
+
+// const bigTransactions = transactions.reduce((acc, el) => {
+//   if (el> 100){
+//   acc.push(el);
 // }
+// return acc;
 
-// const bigTransactions = transactions.reduce(reduceCallback, []);
+// }
+// );
 
-
-const bigTransactions = transactions.reduce((acc, el) => {
-  if (el> 100){
-  acc.push(el);
-}
-return acc;
-
-}
-);
-
-console.log(bigTransactions);
-console.log(transactions);
+// console.log(bigTransactions);
+// console.log(transactions);

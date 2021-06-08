@@ -4,6 +4,7 @@ function withdraw(clients, balances, client, amount) {
     if (clients[i] === client) index = i;
   }
   if (balances[index] - amount >= 0) {
+    // eslint-disable-next-line no-param-reassign
     balances[index] -= amount;
     return balances[index];
   }
