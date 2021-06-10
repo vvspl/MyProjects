@@ -9,14 +9,16 @@ const tasks = [
 const renderListItems = listItems => {
   const baseEl = document.querySelector('.list'); // находим родительский эл-т
 
-  const newListOfEl = listItems.map((obj) => { // перебираем объект с текстом для новых эл-тов
+  const newListOfEl = listItems.map(({text}, done ) => { // перебираем объект с текстом для новых эл-тов
 
     const newEl = document.createElement('li'); // создаем элемент
     const newCheckBx = document.createElement('input'); // создаем чекбокс
     newCheckBx.setAttribute('type', 'checkbox');
-    newEl.classList.add('list__item'); // добавляем класс для нового элемента
+    newCheckBx.checked = done;
     newCheckBx.classList.add('list__item-checkbox'); // класс для чекбокса
-    newEl.append(newCheckBx, obj.text);      // добавляем текст в элемент
+    if (newCheckBx.checked === done) newEl.classList.add('list__item-done')
+    else newEl.classList.add('list__item'); // добавляем класс для нового элемента
+    newEl.append(newCheckBx, text);      // добавляем текст в элемент
 
     return newEl; // новая строка добавлена в массив
   });
