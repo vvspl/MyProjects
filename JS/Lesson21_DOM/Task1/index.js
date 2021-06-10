@@ -16,7 +16,7 @@ const renderListItems = listItems => {
     newCheckBx.setAttribute('type', 'checkbox');
     newCheckBx.checked = done;
     newCheckBx.classList.add('list__item-checkbox'); // класс для чекбокса
-    if (newCheckBx.checked === done) newEl.classList.add('list__item-done')
+    if (newCheckBx.checked === done) newEl.classList.add('list__item-done')  // если checked - добавляем другой класс
     else newEl.classList.add('list__item'); // добавляем класс для нового элемента
     newEl.append(newCheckBx, text);      // добавляем текст в элемент
 
