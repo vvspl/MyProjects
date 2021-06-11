@@ -5,7 +5,7 @@ export const getTitle = () =>{
 
 export const getDescription = () =>{
     const a = document.querySelector('.about');
-    return a.textContent;
+    return a.innerText;
 }
 
 export const getPlans = () =>{
@@ -15,7 +15,7 @@ export const getPlans = () =>{
 
 export const getGoal = () =>{
     const a = document.querySelector('.goal');
-    return a.innerHTML;
+    return a.outerHTML;
 }
 
 console.log(getTitle());
