@@ -22,7 +22,7 @@ export const getTitle = () => {
     return goalEl.outerHTML;
   };
 
-console.log(getTitle());
-console.log(getDescription());
-console.log(getPlans());
-console.log(getGoal());
+// console.log(getTitle());
+// console.log(getDescription());
+// console.log(getPlans());
+// console.log(getGoal());
