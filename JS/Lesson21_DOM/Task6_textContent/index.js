@@ -3,4 +3,4 @@ export const setTitle = (text) => {
     elem.textContent = text;
 };
 
-setTitle('My_string');
+// setTitle('My_string');
