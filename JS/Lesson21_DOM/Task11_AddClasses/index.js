@@ -14,4 +14,4 @@ export const manageClasses = () => {
   };
 };
 
-manageClasses();
+// manageClasses();
