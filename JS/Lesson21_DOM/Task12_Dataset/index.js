@@ -5,7 +5,7 @@ export const squaredNumbers = () =>{
   
     arr.forEach(el =>{
         const elem = el.dataset;
-        el.dataset.number = elem.number*elem.number;
+        el.dataset.squaredNumber = elem.number*elem.number;
     });
 };
 
