@@ -24,15 +24,15 @@ pElem.addEventListener('click', logGreenP);
 spanElem.addEventListener('click', logGreySpan, true);
 spanElem.addEventListener('click', logGreenSpan);
 
-const clearButton = document.querySelector('.clear-btn');
+const clearBtn = document.querySelector('.clear-btn');
 const clearList = () => {
-  const eventsListElem = document.querySelector('.events-list');
-  eventsListElem.innerHTML = '';
+  const eventsListEl = document.querySelector('.events-list');
+  eventsListEl.innerHTML = '';
 };
 
-clearButton.addEventListener('click', clearList);
+clearBtn.addEventListener('click', clearList);
 
-const attachHandlersBtn = document.querySelector('.attach-handlers-btn');
+const addHandlersBtn = document.querySelector('.attach-handlers-btn');
 const attachHandlers = () => {
   divElem.addEventListener('click', logGreyDiv, true);
   divElem.addEventListener('click', logGreenDiv);
@@ -43,7 +43,8 @@ const attachHandlers = () => {
   spanElem.addEventListener('click', logGreySpan, true);
   spanElem.addEventListener('click', logGreenSpan);
 };
-attachHandlersBtn.addEventListener('click', attachHandlers);
+
+addHandlersBtn.addEventListener('click', attachHandlers);
 
 const removeHandlersBtn = document.querySelector('.remove-handlers-btn');
 const removeHandlers = () => {
