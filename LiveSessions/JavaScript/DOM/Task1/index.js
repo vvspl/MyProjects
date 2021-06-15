@@ -8,7 +8,7 @@ const tasks = [
   { text: 'Buy meat', done: true },
 ];
 
-const renderTasks = (tasksList) => {
+const renderTasks = tasksList => {
   listElem.innerHTML = '';
   const tasksElems = tasksList
     .sort((a, b) => a.done - b.done)
@@ -41,26 +41,27 @@ renderTasks(tasks);
 // 3. re-render
 const inputTask = document.querySelector('.task-input');
 
-function onCreateTask(event) {
-  const taskText = inputTask.value;
-  inputTask.value = '';
+function onCreateTask(event){
+const taskText = inputTask.value;
+inputTask.value = '';
   if (!taskText) return;
   listElem.innerHTML = '';
-  tasks.push({ text: `${taskText}`, done: false });
+  tasks.push({ text: `${taskText}`, done: false});
   renderTasks(tasks);
 }
 
 const createBtnE1 = document.querySelector('.create-task-btn');
 createBtnE1.addEventListener('click', onCreateTask);
 
-function onUpdateTask(event) {
+
+function onUpdateTask(event){
   console.log(event.target.classList);
-  if (!event.target.classList.contains('list__item-checkbox')) {
+  if (!event.target.classList.contains('list__item-checkbox')){
     return;
-  }
+  };
   const index = event.target.dataset.id;
   if (tasks[index].done) tasks[index].done = false;
   else tasks[index].done = true;
   renderTasks(tasks);
-}
+  }
 listElem.addEventListener('click', onUpdateTask);
