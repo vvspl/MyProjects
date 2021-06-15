@@ -1,4 +1,6 @@
 const listElem = document.querySelector('.list');
+const inputTask = document.querySelector('.task-input');
+const createBtnE1 = document.querySelector('.create-task-btn');
 
 const tasks = [
   { text: 'Buy milk', done: false },
@@ -10,6 +12,7 @@ const tasks = [
 
 const renderTasks = (tasksList) => {
   listElem.innerHTML = '';
+  inputTask.value = '';
   const tasksElems = tasksList
     .sort((a, b) => a.done - b.done)
     .map(({ text, done }, index) => {
@@ -39,18 +42,14 @@ renderTasks(tasks);
 // 1. get info
 // 2. modify data
 // 3. re-render
-const inputTask = document.querySelector('.task-input');
 
-function onCreateTask(event) {
+function onCreateTask() {
   const taskText = inputTask.value;
-  inputTask.value = '';
   if (!taskText) return;
-  listElem.innerHTML = '';
   tasks.push({ text: `${taskText}`, done: false });
   renderTasks(tasks);
 }
 
-const createBtnE1 = document.querySelector('.create-task-btn');
 createBtnE1.addEventListener('click', onCreateTask);
 
 function onUpdateTask(event) {
