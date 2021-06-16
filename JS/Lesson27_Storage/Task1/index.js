@@ -1,3 +1,4 @@
+/* eslint-disable arrow-body-style */
 localStorage.setItem('person', JSON.stringify({ name: 'Tom' }));
 localStorage.setItem('age', JSON.stringify(17));
 console.log(Object.entries(localStorage));
