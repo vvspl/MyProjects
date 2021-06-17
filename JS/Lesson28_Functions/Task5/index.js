@@ -1,4 +1,4 @@
-const shmoment = (date) => {
+export const shmoment = (date) => {
     const dateObj = { 
         years: +`${date.getFullYear()}`,
         months: +`${date.getMonth()}`,
