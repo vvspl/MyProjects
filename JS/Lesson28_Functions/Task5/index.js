@@ -2,18 +2,20 @@ export const shmoment = (date) => {
   const dateObj = {
     years: +`${date.getFullYear()}`,
     months: +`${date.getMonth()}`,
-    days: +`${date.getDay()}`,
+    days: +`${date.getDate()}`,
     hours: +`${date.getHours()}`,
     minutes: +`${date.getMinutes()}`,
     seconds: +`${date.getSeconds()}`,
     milliseconds: +`${date.getMilliseconds()}`,
   };
-  const dataCalc = {
+    const dataCalc = {
     add(dat, value) {
+    const a = dateObj[dat];
       dateObj[dat] += value;
-      return this;
+       return this;
     },
     subtract(dat, value) {
+        const a = dateObj[dat];
       dateObj[dat] -= +value;
       return this;
     },
@@ -36,5 +38,8 @@ const res = shmoment(new Date(2020, 1, 7, 17, 17, 17))
   .add('minutes', 2)
   .add('days', 8)
   .subtract('years', 1)
+  .subtract('hours', 2)
+  .subtract('seconds', 20)
+  .subtract('milliseconds', 200)
   .result();
 console.log(res);
