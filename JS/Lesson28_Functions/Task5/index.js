@@ -1,34 +1,28 @@
 export const shmoment = (date) => {
   const dateObj = {
-    years: +`${date.getFullYear()}`,
-    months: +`${date.getMonth()}`,
-    days: +`${date.getDate()}`,
-    hours: +`${date.getHours()}`,
-    minutes: +`${date.getMinutes()}`,
-    seconds: +`${date.getSeconds()}`,
-    milliseconds: +`${date.getMilliseconds()}`,
+    years: +`${365 * 24 * 60 * 60 * 1000}`,
+    months: +`${(365 / 12) * 24 * 60 * 60 * 1000}`,
+    days: +`${24 * 60 * 60 * 1000}`,
+    hours: +`${60 * 60 * 1000}`,
+    minutes: +`${60 * 1000}`,
+    seconds: +`${1000}`,
+    milliseconds: +`${1}`,
   };
-    const dataCalc = {
+  let newDate = Date.parse(date);
+
+  const dataCalc = {
     add(dat, value) {
-    const a = dateObj[dat];
-      dateObj[dat] += value;
-       return this;
+      newDate += dateObj[dat] * value;
+      console.log(new Date(newDate));
+      return this;
     },
     subtract(dat, value) {
-        const a = dateObj[dat];
-      dateObj[dat] -= +value;
+      newDate -= dateObj[dat] * value;
+      console.log(new Date(newDate));
       return this;
     },
     result() {
-      const newDateObj = new Date(
-        dateObj.years,
-        dateObj.months,
-        dateObj.hours,
-        dateObj.minutes,
-        dateObj.seconds,
-        dateObj.milliseconds
-      );
-      return newDateObj;
+      return new Date(newDate);
     },
   };
   return dataCalc;
