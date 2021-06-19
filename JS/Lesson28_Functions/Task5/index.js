@@ -14,7 +14,9 @@ export const shmoment = (date) => {
     else if (dat === 'seconds')
       newDate = new Date(new Date(newDate).setSeconds(new Date(newDate).getSeconds() + value));
     else if (dat === 'milliseconds')
-      newDate = new Date(new Date(newDate).setMillieconds(new Date(newDate).getMillieconds() + value));
+      newDate = new Date(
+        new Date(newDate).setMilliseconds(new Date(newDate).getMilliseconds() + value)
+      );
     return newDate;
   };
   const subtractDate = (dat, value) => {
@@ -31,7 +33,9 @@ export const shmoment = (date) => {
     else if (dat === 'seconds')
       newDate = new Date(new Date(newDate).setSeconds(new Date(newDate).getSeconds() - value));
     else if (dat === 'milliseconds')
-      newDate = new Date(new Date(newDate).setMillieconds(new Date(newDate).getMillieconds() - value));
+      newDate = new Date(
+        new Date(newDate).setMilliseconds(new Date(newDate).getMilliseconds() - value)
+      );
     return newDate;
   };
 
@@ -78,8 +82,6 @@ const res = shmoment(new Date(Date.UTC(2020, 0, 1)))
   .subtract('milliseconds', 200)
   .result();
 console.log(res);
-
-
 
 // function year() {
 //   let Dy = new Date(1999,11,31);
