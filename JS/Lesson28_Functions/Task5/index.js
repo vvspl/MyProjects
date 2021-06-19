@@ -13,7 +13,7 @@ export const shmoment = (date) => {
       newDate = new Date(new Date(newDate).setMinutes(new Date(newDate).getMinutes() + value));
     else if (dat === 'seconds')
       newDate = new Date(new Date(newDate).setSeconds(new Date(newDate).getSeconds() + value));
-    else if (dat === 'millieconds')
+    else if (dat === 'milliseconds')
       newDate = new Date(new Date(newDate).setMillieconds(new Date(newDate).getMillieconds() + value));
     return newDate;
   };
@@ -30,7 +30,7 @@ export const shmoment = (date) => {
       newDate = new Date(new Date(newDate).setMinutes(new Date(newDate).getMinutes() - value));
     else if (dat === 'seconds')
       newDate = new Date(new Date(newDate).setSeconds(new Date(newDate).getSeconds() - value));
-    else if (dat === 'millieconds')
+    else if (dat === 'milliseconds')
       newDate = new Date(new Date(newDate).setMillieconds(new Date(newDate).getMillieconds() - value));
     return newDate;
   };
