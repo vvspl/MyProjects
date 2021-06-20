@@ -26,7 +26,5 @@ const onImageLoaded = (error, imgElem) => {
   sizeElem.textContent = `${width} x ${height}`;
 };
 
-addImage(
-  'https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/big.jpeg',
-  onImageLoaded
-);
+// const imgSrc = 'https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/big.jpeg';
+// addImage(imgSrc,onImageLoaded);
