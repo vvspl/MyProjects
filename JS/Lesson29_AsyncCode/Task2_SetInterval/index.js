@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 export const pinger = (num, period) => {
     let i = num;
     console.log('Ping');
