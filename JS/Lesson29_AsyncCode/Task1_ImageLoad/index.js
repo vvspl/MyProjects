@@ -15,7 +15,7 @@ export const addImage = (imgSrc, callback) => {
   imgElem.addEventListener('error', () => callback('Image load is failed...'));
 };
 
-const imgSrc = 'https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/big.jpeg';
+
 
 const onImageLoaded = (error, data) => {
   if (error) {
@@ -27,4 +27,5 @@ const onImageLoaded = (error, data) => {
   sizeElem.textContent = `${width} x ${height}`;
 };
 
+// const imgSrc = 'https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/big.jpeg';
 // addImage(imgSrc, onImageLoaded);
