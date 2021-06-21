@@ -1,3 +1,4 @@
+/* eslint-disable prefer-arrow-callback */
 /* failedPromise должен зареджектить ошибку new Error('Oops, error!');
  * Ответьте себе на вопрос, какой тип данных имеет переменная failedPromise
  */
