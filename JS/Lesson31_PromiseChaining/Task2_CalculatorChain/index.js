@@ -10,7 +10,7 @@ export const asyncCalculator = numbr =>
         new Promise(resolve => {
           setTimeout(() => {
             const result = value * value;
-            console.log(`Square value: ${result}`);
+            console.log(`Squared value: ${result}`);
             resolve(result);
           }, 500);
         }),
