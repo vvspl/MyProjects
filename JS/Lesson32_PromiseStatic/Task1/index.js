@@ -1,5 +1,5 @@
 /* eslint-disable arrow-body-style */
-const getValueWithDelay = (value, delay) =>
+export const getValueWithDelay = (value, delay) =>
   new Promise((resolve) => {
     setTimeout(() => {
       console.log(value);
