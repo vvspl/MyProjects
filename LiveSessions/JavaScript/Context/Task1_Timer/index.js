@@ -3,7 +3,7 @@
 export const timer = {
   secondsPassed: 0,
   minsPassed: 0,
-  intervalId: null,
+  ntervalId: null,
   startTimer() {
   // startTimer: function startTimer() {
     console.log('context of startTimer is: ', this);
@@ -15,7 +15,7 @@ export const timer = {
     // lose context case2:
     // const intervalId = setInterval(function () {
     // потеря контекта если не стрелочная ф-я
-    const intervalId = setInterval(() => {
+    this.intervalId = setInterval(() => {
       console.log('context of callback is: ' + this); // стрелочная ф-я берет контекст свыше
 
       this.secondsPassed += 1;
@@ -25,7 +25,7 @@ export const timer = {
         this.secondsPassed = 0;
       }
     }, 1000);
-    console.log('interval: ' + intervalId);
+    console.log('interval: ' + this.intervalId);
   },
   getTime() {
     if (this.secondsPassed<10) return `${this.minsPassed}:0${this.secondsPassed}`;
@@ -46,8 +46,8 @@ export const timer = {
 timer.startTimer(); // - запуск ф-ции в рамках объекта timer
 setTimeout(() =>{timer.stopTimer(); console.log('timer stopped')}, 3000);
 setTimeout(() =>{timer.startTimer(); console.log('timer started')},3000);
-setTimeout(() =>{timer.stopTimer(); console.log('timer stopped')}, 3000);
-timer.stopTimer();
+// setTimeout(() =>{timer.stopTimer(); console.log('timer stopped')}, 3000);
+// timer.stopTimer();
 
 
 // lose context case1:
