@@ -1,5 +1,5 @@
 /* eslint-disable arrow-body-style */
-export const getValueWithDelay = (value, delay) =>
+const getValueWithDelay = (value, delay) =>
   new Promise((resolve) => {
     setTimeout(() => {
       console.log(value);
@@ -14,7 +14,7 @@ const asuncNum3 = getValueWithDelay(10, 3000);
 const getSum = (numbers) =>
   numbers.reduce((acc, num) => acc + num, 0);
 
-const asyncSum = (...asyncNumbers) => {
+export const asyncSum = (...asyncNumbers) => {
   return Promise.all(asyncNumbers)
     .then((numbers) => getSum(numbers))
     .catch(() => Promise.reject(new Error("Can't calculate")));
