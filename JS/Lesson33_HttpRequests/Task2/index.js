@@ -10,8 +10,7 @@ export function getTasksList() {
 
 export function getTaskById(taskId) {
   //  getTaskById logic
- return getTasksList().then(data => (data.filter(dat=>dat.id===taskId))[0]);
-
+  return fetch(`${baseUrl}/${taskId}`).then((response) => response.json());
 }
 
 // examples
