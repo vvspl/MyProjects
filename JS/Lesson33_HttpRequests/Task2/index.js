@@ -19,6 +19,6 @@ export function getTaskById(taskId) {
 //   console.log(tasksList); // array of the task objects - [ {'id':'1', 'done':false ... }, {'id':'2', 'done':true ... }, ...]
 // });
 
-getTaskById('2').then(taskData => {
-  console.log(taskData); // {'id':'2', 'done':true ... }
-});
+// getTaskById('2').then(taskData => {
+//   console.log(taskData); // {'id':'2', 'done':true ... }
+// });
