@@ -10,7 +10,7 @@ export function getTasksList() {
 
 export function getTaskById(taskId) {
   //  getTaskById logic
- return getTasksList().then(data => data.filter(dat=>dat.id===taskId));
+ return getTasksList().then(data => (data.filter(dat=>dat.id===taskId))[0]);
 
 }
 
@@ -19,6 +19,6 @@ export function getTaskById(taskId) {
 //   console.log(tasksList); // array of the task objects - [ {'id':'1', 'done':false ... }, {'id':'2', 'done':true ... }, ...]
 // });
 
-// getTaskById('2').then(taskData => {
-//   console.log(taskData); // {'id':'2', 'done':true ... }
-// });
+getTaskById('2').then(taskData => {
+  console.log(taskData); // {'id':'2', 'done':true ... }
+});
