@@ -16,9 +16,9 @@ export const onToggleTask = event => {
 
   const updatedTask = {
     text,
-    createDate,
+    // createDate,
     done,
-    finishDate: done ? new Date().toISOString() : null,
+    // finishDate: done ? new Date().toISOString() : null,
   };
   updateTask(taskId, updatedTask)
     .then(() => getTasksList())

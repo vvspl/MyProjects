@@ -1,8 +1,6 @@
-// https://mockapi.io/projects/60d5e3f3943aa60017768cd5
-
 const baseUrl = 'https://60d5e3f3943aa60017768cd4.mockapi.io/api/v1/tasks';
 
-export const createTask = taskData =>
+const createTask = taskData =>
   fetch(baseUrl, {
     method: 'POST',
     headers: {
@@ -11,7 +9,7 @@ export const createTask = taskData =>
     body: JSON.stringify(taskData),
   });
 
-export const updateTask = (taskId, taskData) =>
+const updateTask = (taskId, taskData) =>
   fetch(`${baseUrl}/${taskId}`, {
     method: 'PUT',
     headers: {
@@ -20,14 +18,21 @@ export const updateTask = (taskId, taskData) =>
     body: JSON.stringify(taskData),
   });
 
-export const deleteTask = taskId =>
+const deleteTask = taskId =>
   fetch(`${baseUrl}/${taskId}`, {
     method: 'DELETE',
   });
 
 const mapTasks = tasks => tasks.map(({ _id, ...rest }) => ({ id: _id, ...rest }));
 
-export const getTasksList = () =>
+const getTasksList = () =>
   fetch(baseUrl)
     .then(response => response.json())
     .then(mapTasks);
+
+
+    // createTask({'text':'hallo', 'done':'true'});
+    // deleteTask('16');
+    getTasksList().then(b=>console.log(b));
+
+
