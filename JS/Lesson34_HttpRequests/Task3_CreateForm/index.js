@@ -42,8 +42,9 @@ const onSubmit = (event) => {
     },
     body: JSON.stringify(taskData),
   })
-    .then((response) => {
-      alert(response.body); // вывод ответа сервера
+  .then((response) => response.json())
+  .then((response) => {
+    alert(JSON.stringify(response)); // вывод ответа сервера
       console.log(response);
             if (response.status === 201) mainForm.reset();
     })
