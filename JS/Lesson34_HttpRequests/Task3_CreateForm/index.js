@@ -43,9 +43,8 @@ const onSubmit = (event) => {
     body: JSON.stringify(taskData),
   })
     .then((response) => {
-      alert(response.body); // вывод ответа сервера
-      console.log(response);
-      if (response.status === 201) mainForm.reset();
+      alert(response.json()); // вывод ответа сервера
+            if (response.status === 201) mainForm.reset();
     })
     .catch(() => {
       errorTxt.textContent = 'Failed to create user';
