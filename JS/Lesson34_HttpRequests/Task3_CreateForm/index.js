@@ -4,23 +4,10 @@ const errorTxt = document.querySelector('.error-text');
 
 // проверка на валидацию всех полей
 
-// const onInputChange = () => {
-//   const isValidForm = inputs.reportValidity();
-//   if (isValidForm) {
-//     submitBtn.removeAttribute('disabled');
-//     errorTxt.textContent = '';
-//   } else {
-//     submitBtn.setAttribute('disabled', true);
-//     errorTxt.textContent = '';
-//   }
-// };
-
 inputs.addEventListener('input', // onInputChange
 () => {
   if (inputs.reportValidity()) {
     submitBtn.removeAttribute('disabled');
-    // submitBtn.enabled = true;
-    // submitBtn.setAttribute('enabled', 'enabled');
   }
 }
 );
@@ -45,7 +32,7 @@ const onSubmit = (event) => {
   .then((response) => response.json())
   .then((response) => {
     alert(JSON.stringify(response)); // вывод ответа сервера
-    mainForm.reset();
+    mainForm.reset();         // очистка формы
     })
     .catch(() => {
       errorTxt.textContent = 'Failed to create user';
