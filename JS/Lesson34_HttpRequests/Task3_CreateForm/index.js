@@ -1,27 +1,22 @@
 const inputs = document.querySelector('.login-form');
 const submitBtn = document.querySelector('.submit-button');
+const errorTxt = document.querySelector('.error-text');
 
+ // проверка на валидацию всех полей
 inputs.addEventListener('change', () => {
-  // проверка на валидацию всех полей
   if (inputs.reportValidity()) submitBtn.removeAttribute('disabled');
 });
 
 // получение данных с формы для отправки на сервер
-const emailElem = document.querySelector('.form-input[type=email]');
-const nameElem = document.querySelector('.form-input[type=text]');
-const passwordElem = document.querySelector('.form-input[type=password]');
+const mainForm = document.querySelector('.login-form');
+
 
 // отправка данных на сервер
 const baseUrl = 'https://60d8828beec56d0017477359.mockapi.io/api/v1/users';
-let taskData;
 
 const onSubmit = (event) => {
     event.preventDefault();
-    taskData = {
-    email: emailElem.value,
-    firstName: nameElem.value,
-    lastName: passwordElem.value,
-  };
+  const taskData = Object.fromEntries(new FormData(mainForm))
   console.log(taskData);
   return fetch(baseUrl, {
     method: 'POST',
@@ -29,9 +24,18 @@ const onSubmit = (event) => {
       'Content-Type': 'application/json;charset=utf-8',
     },
     body: JSON.stringify(taskData),
-  }).then((response) => response.json());
+  })
+  .then((response) => {
+    alert(response)  // вывод ответа сервера
+    if (response.status===201) mainForm.reset();
+    console.log(response);
+  })
+  .catch(() => {
+    errorTxt.textContent = 'Failed to create user';
+  });
+  ; 
+  
 };
 
-submitBtn.addEventListener('click', onSubmit());
+submitBtn.addEventListener('click', onSubmit);
 
-onSubmit().then((response) => alert(response)); // вывод ответа сервера
