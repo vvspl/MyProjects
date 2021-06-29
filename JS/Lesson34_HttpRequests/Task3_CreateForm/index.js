@@ -3,14 +3,27 @@ const submitBtn = document.querySelector('.submit-button');
 const errorTxt = document.querySelector('.error-text');
 
 // проверка на валидацию всех полей
-inputs.addEventListener('change', () => {
-  if (inputs.reportValidity()) {
-    submitBtn.removeAttribute('disabled');
-    // submitBtn.enabled = true;
-    submitBtn.setAttribute('enabled', 'enabled');
 
+const onInputChange = () => {
+  const isValidForm = inputs.reportValidity();
+  if (isValidForm) {
+    submitBtn.removeAttribute('disabled');
+    errorTxt.textContent = '';
+  } else {
+    submitBtn.setAttribute('disabled', true);
+    errorTxt.textContent = '';
   }
-});
+};
+
+inputs.addEventListener('change', onInputChange
+// () => {
+//   if (inputs.reportValidity()) {
+//     submitBtn.removeAttribute('disabled');
+//     // submitBtn.enabled = true;
+//     submitBtn.setAttribute('enabled', 'enabled');
+//   }
+// }
+);
 
 // получение данных с формы для отправки на сервер
 const mainForm = document.querySelector('.login-form');
@@ -30,7 +43,7 @@ const onSubmit = (event) => {
     body: JSON.stringify(taskData),
   })
     .then((response) => {
-      alert(response); // вывод ответа сервера
+      alert(response.body); // вывод ответа сервера
       console.log(response);
       if (response.status === 201) mainForm.reset();
     })
