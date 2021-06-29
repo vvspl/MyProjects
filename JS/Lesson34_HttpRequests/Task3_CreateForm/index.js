@@ -4,25 +4,25 @@ const errorTxt = document.querySelector('.error-text');
 
 // проверка на валидацию всех полей
 
-const onInputChange = () => {
-  const isValidForm = inputs.reportValidity();
-  if (isValidForm) {
-    submitBtn.removeAttribute('disabled');
-    errorTxt.textContent = '';
-  } else {
-    submitBtn.setAttribute('disabled', true);
-    errorTxt.textContent = '';
-  }
-};
-
-inputs.addEventListener('change', onInputChange
-// () => {
-//   if (inputs.reportValidity()) {
+// const onInputChange = () => {
+//   const isValidForm = inputs.reportValidity();
+//   if (isValidForm) {
 //     submitBtn.removeAttribute('disabled');
-//     // submitBtn.enabled = true;
-//     submitBtn.setAttribute('enabled', 'enabled');
+//     errorTxt.textContent = '';
+//   } else {
+//     submitBtn.setAttribute('disabled', true);
+//     errorTxt.textContent = '';
 //   }
-// }
+// };
+
+inputs.addEventListener('input', // onInputChange
+() => {
+  if (inputs.reportValidity()) {
+    submitBtn.removeAttribute('disabled');
+    // submitBtn.enabled = true;
+    // submitBtn.setAttribute('enabled', 'enabled');
+  }
+}
 );
 
 // получение данных с формы для отправки на сервер
@@ -45,7 +45,6 @@ const onSubmit = (event) => {
   .then((response) => response.json())
   .then((response) => {
     alert(JSON.stringify(response)); // вывод ответа сервера
-      console.log(response);
             if (response.status === 201) mainForm.reset();
     })
     .catch(() => {
