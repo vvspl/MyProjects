@@ -45,7 +45,7 @@ const onSubmit = (event) => {
   .then((response) => response.json())
   .then((response) => {
     alert(JSON.stringify(response)); // вывод ответа сервера
-            if (response.status === 201) mainForm.reset();
+    mainForm.reset();
     })
     .catch(() => {
       errorTxt.textContent = 'Failed to create user';
