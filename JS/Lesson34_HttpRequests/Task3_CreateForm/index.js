@@ -6,7 +6,9 @@ const errorTxt = document.querySelector('.error-text');
 inputs.addEventListener('change', () => {
   if (inputs.reportValidity()) {
     submitBtn.removeAttribute('disabled');
-    submitBtn.enabled = true;
+    // submitBtn.enabled = true;
+    submitBtn.setAttribute('enabled', 'enabled');
+
   }
 });
 
@@ -28,7 +30,7 @@ const onSubmit = (event) => {
     body: JSON.stringify(taskData),
   })
     .then((response) => {
-      alert({response}); // вывод ответа сервера
+      alert(response); // вывод ответа сервера
       console.log(response);
       if (response.status === 201) mainForm.reset();
     })
