@@ -11,7 +11,7 @@ export class Sportsman {
        setTimeout(() => {
         console.log(`${this.name} is running`);
        }, 3000);
-    }
+    };
 
     // swim(){
     //     console.log(this.name+'Hallo');
