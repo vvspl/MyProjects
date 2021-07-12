@@ -4,7 +4,7 @@ import React from 'react';
 // input: props:object
 // output: jsx
 const Login = (props) => {
-  // console.log('Props: ', props);
+  console.log('Props: ', props);
   return (
     <button className="login btn" onClick={props.onLogin}>
       Login

@@ -16,7 +16,8 @@ class App extends React.Component {
     isLogging: false,
   };
 
-  onLogin() {
+  onLogin = () => {
+    console.log(this);
     this.setState({
       isLoggedIn: true,
     });
@@ -31,24 +32,18 @@ class App extends React.Component {
     }, 2000);
   }
 
-  onLogout() {
+  onLogout = () => {
     this.setState({
-      isLoggedIn: true,
+      isLoggedIn: false,
       isLogging: false,
     });
   }
 
   render() {
-    let page;
-    if (!this.state.isLoggedIn) page = <Login onLogin={this.onLogin} />;
-    else if (this.state.isLogging) page = <Logout onLogout={this.onLogout} />;
-    else page = <Spinner size={20} />;
-
-    return (
-      <>
-        {page}
-      </>
-    );
+    if (!this.state.isLoggedIn) return <Login onLogin={this.onLogin} />;
+    if (this.state.isLogging) return <Logout onLogout={this.onLogout} />;
+    return <Spinner size={20} />;
+    
   }
 }
 
