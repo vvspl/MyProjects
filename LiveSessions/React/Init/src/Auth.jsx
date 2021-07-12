@@ -26,21 +26,27 @@ class App extends React.Component {
     setTimeout(() => {
       this.setState({
         isLoggedIn: true,
-        isLogging: false,
+        isLogging: true,
       });
     }, 2000);
   }
 
   onLogout() {
-    this.setState({});
+    this.setState({
+      isLoggedIn: true,
+      isLogging: false,
+    });
   }
 
   render() {
+    let page;
+    if (!this.state.isLoggedIn) page = <Login onLogin={this.onLogin} />;
+    else if (this.state.isLogging) page = <Logout onLogout={this.onLogout} />;
+    else page = <Spinner size={20} />;
+
     return (
       <>
-        <Login onLogin={this.onLogin} />
-        <Logout onLogout={this.onLogout} />
-        {/* <Spinner size={20} /> */}
+        {page}
       </>
     );
   }
